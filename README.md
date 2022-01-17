@@ -36,24 +36,14 @@ c. Wheel Type ('WheelTypeID')
 d. Car Manufacturing company ('Nationality', 'TopThreeAmericanName') [According to a report, cars manufactured by Japanese companies are at the top of the list of higher life spans]
 e. Advanced vehicle monitoring system
 
+
     The categorical features encoding was followed by standarization of features and feature selection using Gini Impurity.
-    
-    The dataset has 87.7% negative class and 12% majority class. There are several ways in which we can handle imbalanced classes, which are as follows:
-1. Random Under-sampling
-2. Random Over-sampling
-3. NearMiss
+    The dataset has 87.7% negative class and 12% majority class. There are several ways in which we can handle imbalanced classes: Random Under-sampling, Random Over-sampling and NearMiss. For this classification problem, we will be using Synthetic Minority Oversampling Technique (SMOTE).
 
-For this classification problem, we will be using Synthetic Minority Oversampling Technique (SMOTE).
-
-
-    I trained the model using Logistic Regression, SVC, Random Forest, Gradient Boosting, XGBoost and AdaBoost and used Precision, Recall and F1 score as performance metrics. The best performing models are Random Forest, Gradient Boosting, XGBoost. 
-    
-    Then, I used ensemble method using Random Forest, Gradient Boosting, XGBoost models. So, the main output is the 'mode' (statistics) of the outputs from these three models. 
+    I trained the model using Logistic Regression, SVC, Random Forest, Gradient Boosting, XGBoost and AdaBoost and used Precision, Recall and F1 score as performance metrics. The best performing models are Random Forest, Gradient Boosting, XGBoost. Then, I used ensemble method using Random Forest, Gradient Boosting, XGBoost models. So, the main output is the 'mode' (statistics) of the outputs from these three models. 
     
 4. Data Cleaning [IV Data Cleaning - Testing]
-    I cleaned test dataset using similar technique as was used to clean training dataset.
-    
-Then, after some pre-processing steps, I used the ensemble model to classify if a car bought is a good buy or not and have stored the result in 'test_output_file.csv'
+    I cleaned test dataset using similar technique as was used to clean training dataset. Then, after some pre-processing steps, I used the ensemble model to classify if a car bought is a good buy or not and have stored the result in 'test_output_file.csv'
 
 
 
