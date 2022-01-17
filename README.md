@@ -10,7 +10,7 @@ Dataset Used: https://www.kaggle.com/c/DontGetKicked/data
 Data_Dictionary.txt: Details about the features/independent variables |
 training.csv / test.csv: main training and testing datasets |
 cleanedData_training.csv: dataset created after imputating missing values and removing unneccessary columns |
-datafram_training.csv / dataframe_testing.csv: final datasets used for training and testing |
+dataframe_training.csv / dataframe_testing.csv: final datasets used for training and testing |
 test_output_file.csv: output test file containing predicted output (using my ensemble model) | 
 
 Methodology Used:
